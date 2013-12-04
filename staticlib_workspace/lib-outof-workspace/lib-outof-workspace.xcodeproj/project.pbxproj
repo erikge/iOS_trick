@@ -6,11 +6,30 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0B0F938D184F64FC00A0874A /* merge2libs */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0B0F938E184F64FC00A0874A /* Build configuration list for PBXAggregateTarget "merge2libs" */;
+			buildPhases = (
+				0B0F9391184F650B00A0874A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = merge2libs;
+			productName = merge2libs;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		0B2C8743184F6CFE0056A291 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD455BD184CCBBD00581686 /* CoreFoundation.framework */; };
+		0B2C8749184F6CFE0056A291 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C8747184F6CFE0056A291 /* InfoPlist.strings */; };
+		0B2C8750184F6D2C0056A291 /* liblib-outof-workspace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2C8712184F69E70056A291 /* liblib-outof-workspace.a */; };
+		0B2C8752184F6D3A0056A291 /* say_hi.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD455B4184CC4BD00581686 /* say_hi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B2C875D184F703D0056A291 /* index.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B2C875B184F703D0056A291 /* index.h */; };
+		0B2C875E184F703D0056A291 /* index.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C875C184F703D0056A291 /* index.mm */; };
 		6BD4558F184CC1E000581686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD4558E184CC1E000581686 /* Foundation.framework */; };
 		6BD4559D184CC1E000581686 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD4559C184CC1E000581686 /* XCTest.framework */; };
 		6BD4559E184CC1E000581686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD4558E184CC1E000581686 /* Foundation.framework */; };
-		6BD455A0184CC1E000581686 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD4559F184CC1E000581686 /* UIKit.framework */; };
 		6BD455A3184CC1E000581686 /* liblib-outof-workspace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD4558B184CC1E000581686 /* liblib-outof-workspace.a */; };
 		6BD455A9184CC1E000581686 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BD455A7184CC1E000581686 /* InfoPlist.strings */; };
 		6BD455AB184CC1E000581686 /* lib_outof_workspaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD455AA184CC1E000581686 /* lib_outof_workspaceTests.m */; };
@@ -22,7 +41,26 @@
 		6BD455CE184CDBEE00581686 /* say_hi.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD455B4184CC4BD00581686 /* say_hi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		0B2C875A184F6F4C0056A291 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
+		0B2C874E184F6D120056A291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BD45583184CC1E000581686 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B0F938D184F64FC00A0874A;
+			remoteInfo = merge2libs;
+		};
 		6BD455A1184CC1E000581686 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6BD45583184CC1E000581686 /* Project object */;
@@ -45,12 +83,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B2C8712184F69E70056A291 /* liblib-outof-workspace.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblib-outof-workspace.a"; path = "DerivedData/lib-outof-workspace/Build/Products/Debug-universal/liblib-outof-workspace.a"; sourceTree = "<group>"; };
+		0B2C8742184F6CFD0056A291 /* uniSay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uniSay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B2C8746184F6CFE0056A291 /* uniSay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "uniSay-Info.plist"; sourceTree = "<group>"; };
+		0B2C8748184F6CFE0056A291 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B2C874A184F6CFE0056A291 /* uniSay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uniSay-Prefix.pch"; sourceTree = "<group>"; };
+		0B2C8756184F6EB60056A291 /* liblib-outof-workspace.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblib-outof-workspace.a"; path = "DerivedData/lib-outof-workspace/Build/Products/Debug-universal/liblib-outof-workspace.a"; sourceTree = "<group>"; };
+		0B2C875B184F703D0056A291 /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = index.h; sourceTree = "<group>"; };
+		0B2C875C184F703D0056A291 /* index.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = index.mm; sourceTree = "<group>"; };
 		6BD4558B184CC1E000581686 /* liblib-outof-workspace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblib-outof-workspace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD4558E184CC1E000581686 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6BD45592184CC1E000581686 /* lib-outof-workspace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lib-outof-workspace-Prefix.pch"; sourceTree = "<group>"; };
 		6BD4559B184CC1E000581686 /* lib-outof-workspaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lib-outof-workspaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD4559C184CC1E000581686 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6BD4559F184CC1E000581686 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		6BD455A6184CC1E000581686 /* lib-outof-workspaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lib-outof-workspaceTests-Info.plist"; sourceTree = "<group>"; };
 		6BD455A8184CC1E000581686 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6BD455AA184CC1E000581686 /* lib_outof_workspaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lib_outof_workspaceTests.m; sourceTree = "<group>"; };
@@ -64,6 +109,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B2C873F184F6CFD0056A291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2C8750184F6D2C0056A291 /* liblib-outof-workspace.a in Frameworks */,
+				0B2C8743184F6CFE0056A291 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BD45588184CC1E000581686 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,7 +131,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BD4559D184CC1E000581686 /* XCTest.framework in Frameworks */,
-				6BD455A0184CC1E000581686 /* UIKit.framework in Frameworks */,
 				6BD4559E184CC1E000581686 /* Foundation.framework in Frameworks */,
 				6BD455A3184CC1E000581686 /* liblib-outof-workspace.a in Frameworks */,
 			);
@@ -94,12 +147,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2C8744184F6CFE0056A291 /* uniSay */ = {
+			isa = PBXGroup;
+			children = (
+				0B2C8745184F6CFE0056A291 /* Supporting Files */,
+				0B2C875B184F703D0056A291 /* index.h */,
+				0B2C875C184F703D0056A291 /* index.mm */,
+			);
+			path = uniSay;
+			sourceTree = "<group>";
+		};
+		0B2C8745184F6CFE0056A291 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B2C8746184F6CFE0056A291 /* uniSay-Info.plist */,
+				0B2C8747184F6CFE0056A291 /* InfoPlist.strings */,
+				0B2C874A184F6CFE0056A291 /* uniSay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6BD45582184CC1E000581686 = {
 			isa = PBXGroup;
 			children = (
+				0B2C8756184F6EB60056A291 /* liblib-outof-workspace.a */,
 				6BD45590184CC1E000581686 /* lib-outof-workspace */,
 				6BD455A4184CC1E000581686 /* lib-outof-workspaceTests */,
 				6BD455BF184CCBBD00581686 /* SayHi */,
+				0B2C8744184F6CFE0056A291 /* uniSay */,
 				6BD4558D184CC1E000581686 /* Frameworks */,
 				6BD4558C184CC1E000581686 /* Products */,
 			);
@@ -111,6 +186,7 @@
 				6BD4558B184CC1E000581686 /* liblib-outof-workspace.a */,
 				6BD4559B184CC1E000581686 /* lib-outof-workspaceTests.xctest */,
 				6BD455BC184CCBBD00581686 /* SayHi.framework */,
+				0B2C8742184F6CFD0056A291 /* uniSay.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,9 +194,9 @@
 		6BD4558D184CC1E000581686 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B2C8712184F69E70056A291 /* liblib-outof-workspace.a */,
 				6BD4558E184CC1E000581686 /* Foundation.framework */,
 				6BD4559C184CC1E000581686 /* XCTest.framework */,
-				6BD4559F184CC1E000581686 /* UIKit.framework */,
 				6BD455BD184CCBBD00581686 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
@@ -183,6 +259,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0B2C8751184F6D340056A291 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2C8752184F6D3A0056A291 /* say_hi.h in Headers */,
+				0B2C875D184F703D0056A291 /* index.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BD455CD184CDBE500581686 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +279,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0B2C8741184F6CFD0056A291 /* uniSay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B2C874B184F6CFE0056A291 /* Build configuration list for PBXNativeTarget "uniSay" */;
+			buildPhases = (
+				0B2C873E184F6CFD0056A291 /* Sources */,
+				0B2C873F184F6CFD0056A291 /* Frameworks */,
+				0B2C8740184F6CFD0056A291 /* Resources */,
+				0B2C8751184F6D340056A291 /* Headers */,
+			);
+			buildRules = (
+				0B2C875A184F6F4C0056A291 /* PBXBuildRule */,
+			);
+			dependencies = (
+				0B2C874F184F6D120056A291 /* PBXTargetDependency */,
+			);
+			name = uniSay;
+			productName = uniSay;
+			productReference = 0B2C8742184F6CFD0056A291 /* uniSay.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
 		6BD4558A184CC1E000581686 /* lib-outof-workspace */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BD455AE184CC1E000581686 /* Build configuration list for PBXNativeTarget "lib-outof-workspace" */;
@@ -255,6 +360,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = erikge;
+				TargetAttributes = {
+					6BD4559A184CC1E000581686 = {
+						TestTargetID = 6BD455BB184CCBBD00581686;
+					};
+				};
 			};
 			buildConfigurationList = 6BD45586184CC1E000581686 /* Build configuration list for PBXProject "lib-outof-workspace" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -271,11 +381,21 @@
 				6BD4558A184CC1E000581686 /* lib-outof-workspace */,
 				6BD4559A184CC1E000581686 /* lib-outof-workspaceTests */,
 				6BD455BB184CCBBD00581686 /* SayHi */,
+				0B0F938D184F64FC00A0874A /* merge2libs */,
+				0B2C8741184F6CFD0056A291 /* uniSay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B2C8740184F6CFD0056A291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2C8749184F6CFE0056A291 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BD45599184CC1E000581686 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,7 +414,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B0F9391184F650B00A0874A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target lib-outof-workspace ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target lib-outof-workspace -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\n# cp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0B2C873E184F6CFD0056A291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2C875E184F703D0056A291 /* index.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BD45587184CC1E000581686 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +467,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0B2C874F184F6D120056A291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B0F938D184F64FC00A0874A /* merge2libs */;
+			targetProxy = 0B2C874E184F6D120056A291 /* PBXContainerItemProxy */;
+		};
 		6BD455A2184CC1E000581686 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6BD4558A184CC1E000581686 /* lib-outof-workspace */;
@@ -331,6 +480,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0B2C8747184F6CFE0056A291 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B2C8748184F6CFE0056A291 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		6BD455A7184CC1E000581686 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -350,6 +507,75 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0B0F938F184F64FC00A0874A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0B0F9390184F64FC00A0874A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		0B2C874C184F6CFE0056A291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "uniSay/uniSay-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "uniSay/uniSay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/VCTL01/proj/self/iOS_trick/staticlib_workspace/lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-universal",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		0B2C874D184F6CFE0056A291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "uniSay/uniSay-Prefix.pch";
+				INFOPLIST_FILE = "uniSay/uniSay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/VCTL01/proj/self/iOS_trick/staticlib_workspace/lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-universal",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		6BD455AC184CC1E000581686 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -384,7 +610,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -417,7 +643,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -453,6 +679,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SayHi.framework/SayHi";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -466,6 +693,7 @@
 				);
 				INFOPLIST_FILE = "lib-outof-workspaceTests/lib-outof-workspaceTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -474,6 +702,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SayHi.framework/SayHi";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -483,6 +712,7 @@
 				GCC_PREFIX_HEADER = "lib-outof-workspace/lib-outof-workspace-Prefix.pch";
 				INFOPLIST_FILE = "lib-outof-workspaceTests/lib-outof-workspaceTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -535,6 +765,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B0F938E184F64FC00A0874A /* Build configuration list for PBXAggregateTarget "merge2libs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B0F938F184F64FC00A0874A /* Debug */,
+				0B0F9390184F64FC00A0874A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B2C874B184F6CFE0056A291 /* Build configuration list for PBXNativeTarget "uniSay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B2C874C184F6CFE0056A291 /* Debug */,
+				0B2C874D184F6CFE0056A291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6BD45586184CC1E000581686 /* Build configuration list for PBXProject "lib-outof-workspace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -551,6 +799,7 @@
 				6BD455B0184CC1E000581686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BD455B1184CC1E000581686 /* Build configuration list for PBXNativeTarget "lib-outof-workspaceTests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +808,7 @@
 				6BD455B3184CC1E000581686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BD455C6184CCBBD00581686 /* Build configuration list for PBXNativeTarget "SayHi" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +817,7 @@
 				6BD455C8184CCBBD00581686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

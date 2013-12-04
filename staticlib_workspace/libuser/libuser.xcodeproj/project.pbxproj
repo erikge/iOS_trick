@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2C8765184F746C0056A291 /* uniSay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2C8764184F746C0056A291 /* uniSay.framework */; };
 		6BD454E7184CC0CD00581686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD454E6184CC0CD00581686 /* Foundation.framework */; };
 		6BD454E9184CC0CD00581686 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD454E8184CC0CD00581686 /* CoreGraphics.framework */; };
 		6BD454EB184CC0CD00581686 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD454EA184CC0CD00581686 /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		6BD4550B184CC0CD00581686 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD454EA184CC0CD00581686 /* UIKit.framework */; };
 		6BD45513184CC0CD00581686 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BD45511184CC0CD00581686 /* InfoPlist.strings */; };
 		6BD45515184CC0CD00581686 /* libuserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD45514184CC0CD00581686 /* libuserTests.m */; };
-		6BD455D0184CDC3F00581686 /* SayHi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD455CF184CDC3F00581686 /* SayHi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2C8764184F746C0056A291 /* uniSay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = uniSay.framework; path = "../lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-iphoneos/uniSay.framework"; sourceTree = "<group>"; };
 		6BD454E3184CC0CD00581686 /* libuser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libuser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD454E6184CC0CD00581686 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6BD454E8184CC0CD00581686 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,7 +57,6 @@
 		6BD45510184CC0CD00581686 /* libuserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libuserTests-Info.plist"; sourceTree = "<group>"; };
 		6BD45512184CC0CD00581686 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6BD45514184CC0CD00581686 /* libuserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libuserTests.m; sourceTree = "<group>"; };
-		6BD455CF184CDC3F00581686 /* SayHi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SayHi.framework; path = "../lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-iphonesimulator/SayHi.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BD455D0184CDC3F00581686 /* SayHi.framework in Frameworks */,
+				0B2C8765184F746C0056A291 /* uniSay.framework in Frameworks */,
 				6BD454E9184CC0CD00581686 /* CoreGraphics.framework in Frameworks */,
 				6BD454EB184CC0CD00581686 /* UIKit.framework in Frameworks */,
 				6BD454E7184CC0CD00581686 /* Foundation.framework in Frameworks */,
@@ -106,7 +106,7 @@
 		6BD454E5184CC0CD00581686 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6BD455CF184CDC3F00581686 /* SayHi.framework */,
+				0B2C8764184F746C0056A291 /* uniSay.framework */,
 				6BD454E6184CC0CD00581686 /* Foundation.framework */,
 				6BD454E8184CC0CD00581686 /* CoreGraphics.framework */,
 				6BD454EA184CC0CD00581686 /* UIKit.framework */,
@@ -398,7 +398,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/erikge/proj/iOS_trick/staticlib_workspace/lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-iphonesimulator",
+					"${SRCROOT}/../lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libuser/libuser-Prefix.pch";
@@ -415,7 +415,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/erikge/proj/iOS_trick/staticlib_workspace/lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-iphonesimulator",
+					"${SRCROOT}/../lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libuser/libuser-Prefix.pch";
@@ -486,6 +486,7 @@
 				6BD4551A184CC0CD00581686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BD4551B184CC0CD00581686 /* Build configuration list for PBXNativeTarget "libuserTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +495,7 @@
 				6BD4551D184CC0CD00581686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
