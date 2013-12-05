@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <uniSay/say_hi.h>
+#import <finalUniByTemplate/say_hi.h>
 
 @interface ViewController ()
 

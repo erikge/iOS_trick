@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B2C8765184F746C0056A291 /* uniSay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2C8764184F746C0056A291 /* uniSay.framework */; };
+		0BBBDE5D18506FF0006A1BD1 /* finalUniByTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBBDE5B18506F9A006A1BD1 /* finalUniByTemplate.framework */; };
 		6BD454E7184CC0CD00581686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD454E6184CC0CD00581686 /* Foundation.framework */; };
 		6BD454E9184CC0CD00581686 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD454E8184CC0CD00581686 /* CoreGraphics.framework */; };
 		6BD454EB184CC0CD00581686 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD454EA184CC0CD00581686 /* UIKit.framework */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B2C8764184F746C0056A291 /* uniSay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = uniSay.framework; path = "../lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-iphoneos/uniSay.framework"; sourceTree = "<group>"; };
+		0BBBDE5B18506F9A006A1BD1 /* finalUniByTemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = finalUniByTemplate.framework; path = "../lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Intermediates/ArchiveIntermediates/finalUniByTemplate/IntermediateBuildFilesPath/UninstalledProducts/finalUniByTemplate.framework"; sourceTree = "<group>"; };
 		6BD454E3184CC0CD00581686 /* libuser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libuser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD454E6184CC0CD00581686 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6BD454E8184CC0CD00581686 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B2C8765184F746C0056A291 /* uniSay.framework in Frameworks */,
+				0BBBDE5D18506FF0006A1BD1 /* finalUniByTemplate.framework in Frameworks */,
 				6BD454E9184CC0CD00581686 /* CoreGraphics.framework in Frameworks */,
 				6BD454EB184CC0CD00581686 /* UIKit.framework in Frameworks */,
 				6BD454E7184CC0CD00581686 /* Foundation.framework in Frameworks */,
@@ -106,7 +106,7 @@
 		6BD454E5184CC0CD00581686 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0B2C8764184F746C0056A291 /* uniSay.framework */,
+				0BBBDE5B18506F9A006A1BD1 /* finalUniByTemplate.framework */,
 				6BD454E6184CC0CD00581686 /* Foundation.framework */,
 				6BD454E8184CC0CD00581686 /* CoreGraphics.framework */,
 				6BD454EA184CC0CD00581686 /* UIKit.framework */,
@@ -398,7 +398,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"${SRCROOT}/../lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-iphoneos",
+					"${SRCROOT}/../lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Intermediates/ArchiveIntermediates/finalUniByTemplate/IntermediateBuildFilesPath/UninstalledProducts",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libuser/libuser-Prefix.pch";
@@ -415,7 +415,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"${SRCROOT}/../lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Products/Debug-iphoneos",
+					"${SRCROOT}/../lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Intermediates/ArchiveIntermediates/finalUniByTemplate/IntermediateBuildFilesPath/UninstalledProducts",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libuser/libuser-Prefix.pch";
@@ -434,6 +434,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Users/VCTL01/proj/self/iOS_trick/staticlib_workspace/lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Intermediates/ArchiveIntermediates/finalUniByTemplate/IntermediateBuildFilesPath/UninstalledProducts",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libuser/libuser-Prefix.pch";
@@ -457,6 +458,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Users/VCTL01/proj/self/iOS_trick/staticlib_workspace/lib-outof-workspace/DerivedData/lib-outof-workspace/Build/Intermediates/ArchiveIntermediates/finalUniByTemplate/IntermediateBuildFilesPath/UninstalledProducts",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libuser/libuser-Prefix.pch";

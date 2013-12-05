@@ -6,8 +6,8 @@
 //  Copyright (c) 2013年 erikge. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface finalUniByTemplate : NSObject
-
-@end
+//#import <Foundation/Foundation.h>
+//
+//@interface finalUniByTemplate : NSObject
+//
+//@end
