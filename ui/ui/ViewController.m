@@ -27,14 +27,29 @@
 }
 
 - (IBAction)convertTemperature:(id)sender {
-//    double fahrenheit = [_tempText.text doubleValue];
-//    double celsius = (fahrenheit - 32) / 1.8;
-//    
-//    NSString *resultString = [[NSString alloc]
-//                              initWithFormat: @"Celsius %f", celsius];
-//    _resultLabel.text = resultString;
+    double fahrenheit = [_temperatureInput.text doubleValue];
+    _temperatureInput.text = [NSString stringWithFormat:@"%f", fahrenheit];
+    double celsius = (fahrenheit - 32) / 1.8;
+    
+    NSString *resultString = [[NSString alloc]
+                              initWithFormat: @"Celsius %f", celsius];
+    _convertLabel.text = resultString;
 
 }
+
+- (IBAction)hintReturn:(id)sender {
+    [sender resignFirstResponder];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    if ([_temperatureInput isFirstResponder] && [touch view] != _temperatureInput) {
+        [_temperatureInput resignFirstResponder];
+    }
+    [super touchesBegan:touches withEvent:event];
+}
+
 
 
 @end
