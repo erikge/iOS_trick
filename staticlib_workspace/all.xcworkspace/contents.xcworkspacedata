@@ -2,12 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:tedmathplus/tedmathplus.xcodeproj">
+      location = "group:abcUniManual/abcUniManual.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:tedmath/tedmath.xcodeproj">
+      location = "group:main/main.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:libuser/libuser.xcodeproj">
+      location = "group:abcNormalA/abcNormalA.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:abcBundle/abcBundle.xcodeproj">
    </FileRef>
 </Workspace>

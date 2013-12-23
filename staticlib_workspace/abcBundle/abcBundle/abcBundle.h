@@ -1,0 +1,32 @@
+//
+//  abcBundle.h
+//  abcBundle
+//
+//  Created by erikge on 13-12-23.
+//  Copyright (c) 2013年 self. All rights reserved.
+//
+
+#ifndef abcBundle_abcBundle_h
+#define abcBundle_abcBundle_h
+
+/**
+ * 通过修改 OS X -> Bundle工程模板创建 Framework
+ * 本工程创建的frame不是模拟器、真机统一的
+ 
+ Steps:
+ 1. Build Settings
+    Base SDK 改为 Latest iOS
+    Dead Code Stripping设置为NO
+    Mach-O Type 为Relocatable Object File或者Static Library
+    Link With Standard Libraries为NO
+    Wrapper Extension修改为：默认的bundle改成framework
+    Deployment 下OS X Deployment Target，将类似“OS X 10.9”改为”Compiler Default”
+    Targeted Device Family改为需要的，此处改成了”iPhone/iPad”
+ 2. 预编译头全部注释掉
+    abcBundle-Prefix.pch中的import注释掉
+ 3. Build Phases中添加Copy Headers，按需要copy头文件
+ */
+
+int bundle_add(int x, int y);
+
+#endif
