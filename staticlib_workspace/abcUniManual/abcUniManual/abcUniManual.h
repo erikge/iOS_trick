@@ -19,4 +19,4 @@
  * 本工程同时示范引用stl库
  */
 
-void say_hello();
+void manual_say_hello();

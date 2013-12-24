@@ -13,6 +13,6 @@
 
 @end
 
-void say_hello() {
+void manual_say_hello() {
     std::cout << "say: Hello World" << std::endl;
 }

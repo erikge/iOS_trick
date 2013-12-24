@@ -26,7 +26,7 @@
     
     // test manual
     NSLog(@"manual say: --");
-    say_hello();
+    manual_say_hello();
 }
 
 - (void)didReceiveMemoryWarning
