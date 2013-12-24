@@ -2,15 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:abcUniTemplate/abcUniTemplate.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:abcUniManual/abcUniManual.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:main/main.xcodeproj">
+      location = "group:abcBundle/abcBundle.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:abcNormalA/abcNormalA.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:abcBundle/abcBundle.xcodeproj">
    </FileRef>
 </Workspace>

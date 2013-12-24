@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <abcBundle/abcBundle.h>
 #import <manual/abcUniManual.h>
+#import <abcUniTemplate/abcUniTemplate.h>
 
 @interface ViewController ()
 
@@ -27,6 +28,9 @@
     // test manual
     NSLog(@"manual say: --");
     manual_say_hello();
+    
+    // test template
+    template_say_hello();
 }
 
 - (void)didReceiveMemoryWarning

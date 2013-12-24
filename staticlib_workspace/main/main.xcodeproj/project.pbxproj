@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B06301518695273005C7E6C /* manual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B06301418695273005C7E6C /* manual.framework */; };
+		0BBD4FC71869449C006A1007 /* abcBundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBD4FC51869449C006A1007 /* abcBundle.framework */; };
+		0BBD4FE718694A44006A1007 /* abcUniTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBD4FE618694A44006A1007 /* abcUniTemplate.framework */; };
 		6B8088EA18688CF10010FDC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8088E918688CF10010FDC7 /* Foundation.framework */; };
 		6B8088EC18688CF10010FDC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8088EB18688CF10010FDC7 /* CoreGraphics.framework */; };
 		6B8088EE18688CF10010FDC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8088ED18688CF10010FDC7 /* UIKit.framework */; };
@@ -22,8 +25,6 @@
 		6B80890E18688CF10010FDC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8088ED18688CF10010FDC7 /* UIKit.framework */; };
 		6B80891618688CF10010FDC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B80891418688CF10010FDC7 /* InfoPlist.strings */; };
 		6B80891818688CF10010FDC7 /* mainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B80891718688CF10010FDC7 /* mainTests.m */; };
-		6B808941186893F70010FDC7 /* abcBundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B808940186893F70010FDC7 /* abcBundle.framework */; };
-		6B80897F18689D880010FDC7 /* manual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B80897D18689BA20010FDC7 /* manual.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B06301418695273005C7E6C /* manual.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = manual.framework; path = lib/manual.framework; sourceTree = "<group>"; };
+		0BBD4FC51869449C006A1007 /* abcBundle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = abcBundle.framework; path = lib/abcBundle.framework; sourceTree = "<group>"; };
+		0BBD4FE618694A44006A1007 /* abcUniTemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = abcUniTemplate.framework; path = lib/abcUniTemplate.framework; sourceTree = "<group>"; };
 		6B8088E618688CF10010FDC7 /* main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = main.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8088E918688CF10010FDC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B8088EB18688CF10010FDC7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,8 +61,6 @@
 		6B80891318688CF10010FDC7 /* mainTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mainTests-Info.plist"; sourceTree = "<group>"; };
 		6B80891518688CF10010FDC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B80891718688CF10010FDC7 /* mainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mainTests.m; sourceTree = "<group>"; };
-		6B808940186893F70010FDC7 /* abcBundle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = abcBundle.framework; path = "../DerivedData/all/Build/Products/Debug-iphonesimulator/abcBundle.framework"; sourceTree = "<group>"; };
-		6B80897D18689BA20010FDC7 /* manual.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = manual.framework; path = "../DerivedData/all/Build/Products/Debug-iphoneuniversal/manual.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B80897F18689D880010FDC7 /* manual.framework in Frameworks */,
-				6B808941186893F70010FDC7 /* abcBundle.framework in Frameworks */,
+				0B06301518695273005C7E6C /* manual.framework in Frameworks */,
+				0BBD4FE718694A44006A1007 /* abcUniTemplate.framework in Frameworks */,
+				0BBD4FC71869449C006A1007 /* abcBundle.framework in Frameworks */,
 				6B8088EC18688CF10010FDC7 /* CoreGraphics.framework in Frameworks */,
 				6B8088EE18688CF10010FDC7 /* UIKit.framework in Frameworks */,
 				6B8088EA18688CF10010FDC7 /* Foundation.framework in Frameworks */,
@@ -109,8 +112,9 @@
 		6B8088E818688CF10010FDC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B80897D18689BA20010FDC7 /* manual.framework */,
-				6B808940186893F70010FDC7 /* abcBundle.framework */,
+				0B06301418695273005C7E6C /* manual.framework */,
+				0BBD4FE618694A44006A1007 /* abcUniTemplate.framework */,
+				0BBD4FC51869449C006A1007 /* abcBundle.framework */,
 				6B8088E918688CF10010FDC7 /* Foundation.framework */,
 				6B8088EB18688CF10010FDC7 /* CoreGraphics.framework */,
 				6B8088ED18688CF10010FDC7 /* UIKit.framework */,
@@ -326,8 +330,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -366,8 +370,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -402,8 +406,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/erikge/proj/iOS_trick/staticlib_workspace/DerivedData/all/Build/Products/Debug-iphonesimulator",
-					"/Users/erikge/proj/iOS_trick/staticlib_workspace/DerivedData/all/Build/Products/Debug-iphoneuniversal",
+					/Users/VCTL01/proj/self/iOS_trick/staticlib_workspace/main/lib,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "main/main-Prefix.pch";
@@ -420,8 +423,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/erikge/proj/iOS_trick/staticlib_workspace/DerivedData/all/Build/Products/Debug-iphonesimulator",
-					"/Users/erikge/proj/iOS_trick/staticlib_workspace/DerivedData/all/Build/Products/Debug-iphoneuniversal",
+					/Users/VCTL01/proj/self/iOS_trick/staticlib_workspace/main/lib,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "main/main-Prefix.pch";
@@ -492,6 +494,7 @@
 				6B80891D18688CF10010FDC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B80891E18688CF10010FDC7 /* Build configuration list for PBXNativeTarget "mainTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +503,7 @@
 				6B80892018688CF10010FDC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
