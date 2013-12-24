@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B06301518695273005C7E6C /* manual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B06301418695273005C7E6C /* manual.framework */; };
+		0B06307018699566005C7E6C /* frameA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B06306F18699566005C7E6C /* frameA.framework */; };
 		0BBD4FC71869449C006A1007 /* abcBundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBD4FC51869449C006A1007 /* abcBundle.framework */; };
 		0BBD4FE718694A44006A1007 /* abcUniTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBD4FE618694A44006A1007 /* abcUniTemplate.framework */; };
 		6B8088EA18688CF10010FDC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8088E918688CF10010FDC7 /* Foundation.framework */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0B06301418695273005C7E6C /* manual.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = manual.framework; path = lib/manual.framework; sourceTree = "<group>"; };
+		0B06306F18699566005C7E6C /* frameA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = frameA.framework; path = lib/frameA.framework; sourceTree = "<group>"; };
 		0BBD4FC51869449C006A1007 /* abcBundle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = abcBundle.framework; path = lib/abcBundle.framework; sourceTree = "<group>"; };
 		0BBD4FE618694A44006A1007 /* abcUniTemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = abcUniTemplate.framework; path = lib/abcUniTemplate.framework; sourceTree = "<group>"; };
 		6B8088E618688CF10010FDC7 /* main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = main.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B06307018699566005C7E6C /* frameA.framework in Frameworks */,
 				0B06301518695273005C7E6C /* manual.framework in Frameworks */,
 				0BBD4FE718694A44006A1007 /* abcUniTemplate.framework in Frameworks */,
 				0BBD4FC71869449C006A1007 /* abcBundle.framework in Frameworks */,
@@ -112,6 +115,7 @@
 		6B8088E818688CF10010FDC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B06306F18699566005C7E6C /* frameA.framework */,
 				0B06301418695273005C7E6C /* manual.framework */,
 				0BBD4FE618694A44006A1007 /* abcUniTemplate.framework */,
 				0BBD4FC51869449C006A1007 /* abcBundle.framework */,

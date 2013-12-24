@@ -12,6 +12,7 @@
 #import <manual/cppInterface.h>
 #import <manual/muxInterface.h>
 #import <abcUniTemplate/abcUniTemplate.h>
+#import <frameA/frameA.h>
 
 
 @interface ViewController ()
@@ -26,7 +27,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // test bundle
-    //NSLog(@"bundle add: 3 + 2 = %d", bundle_add(3, 2));
+    NSLog(@"bundle add: 3 + 2 = %d", bundle_add(3, 2));
     
     // test manual
     NSLog(@"manual say: ---");
@@ -38,6 +39,10 @@
     
     // test template
     template_say_hello();
+    NSLog(@"template add: 3 + 6 = %d", template_add(3, 6));
+    
+    // test Framework -> Framework
+    NSLog(@"framework minus: 8 - 6 = %d", frame_a_minux(8, 6));
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,4 +7,7 @@ all：用各种方式编译库
     3 manual uni Framework      --> abcUniManual
     4 template uni Framework    --> abcUniTemplate
     
-    
+库之间的依赖关系
+    1 Framework(abcUniManual)   --> system lib(libstdc++)
+    2 Framework(abcUniTemplate) --> self lib(abcNormalA)
+    3 Framework(abcFrmA)        --> self Framework(abcFrmB)

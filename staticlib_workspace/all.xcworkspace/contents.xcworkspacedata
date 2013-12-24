@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:frameA/frameA.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:frameB/frameB.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:readme.txt">
    </FileRef>
    <FileRef

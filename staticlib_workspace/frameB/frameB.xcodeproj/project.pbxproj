@@ -7,94 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B06302D18698F71005C7E6C /* abcNormalA.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B06302B18698F71005C7E6C /* abcNormalA.h */; };
-		0B06303118699099005C7E6C /* libabcNormalA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B06302C18698F71005C7E6C /* libabcNormalA.a */; settings = {ATTRIBUTES = (Required, ); }; };
-		0BBD4FDB186947FC006A1007 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BBD4FD9186947FC006A1007 /* InfoPlist.strings */; };
-		0BBD4FDF186947FC006A1007 /* abcUniTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD4FDE186947FC006A1007 /* abcUniTemplate.m */; };
-		0BBD4FE518694924006A1007 /* abcUniTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BBD4FDD186947FC006A1007 /* abcUniTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B06306018699373005C7E6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B06305E18699373005C7E6C /* InfoPlist.strings */; };
+		0B06306418699373005C7E6C /* frameB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B06306318699373005C7E6C /* frameB.m */; };
+		0B06306A18699428005C7E6C /* frameB.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B06306218699373005C7E6C /* frameB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B06302B18698F71005C7E6C /* abcNormalA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = abcNormalA.h; sourceTree = "<group>"; };
-		0B06302C18698F71005C7E6C /* libabcNormalA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libabcNormalA.a; sourceTree = "<group>"; };
-		0BBD4FD4186947FC006A1007 /* abcUniTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = abcUniTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BBD4FD8186947FC006A1007 /* abcUniTemplate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "abcUniTemplate-Info.plist"; sourceTree = "<group>"; };
-		0BBD4FDA186947FC006A1007 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0BBD4FDC186947FC006A1007 /* abcUniTemplate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "abcUniTemplate-Prefix.pch"; sourceTree = "<group>"; };
-		0BBD4FDD186947FC006A1007 /* abcUniTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = abcUniTemplate.h; sourceTree = "<group>"; };
-		0BBD4FDE186947FC006A1007 /* abcUniTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = abcUniTemplate.m; sourceTree = "<group>"; };
+		0B06305918699373005C7E6C /* frameB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = frameB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B06305D18699373005C7E6C /* frameB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "frameB-Info.plist"; sourceTree = "<group>"; };
+		0B06305F18699373005C7E6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B06306118699373005C7E6C /* frameB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "frameB-Prefix.pch"; sourceTree = "<group>"; };
+		0B06306218699373005C7E6C /* frameB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = frameB.h; sourceTree = "<group>"; };
+		0B06306318699373005C7E6C /* frameB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = frameB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0BBD4FCF186947FC006A1007 /* Frameworks */ = {
+		0B06305418699373005C7E6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B06303118699099005C7E6C /* libabcNormalA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B06302818698F71005C7E6C /* lib */ = {
+		0B06304E18699373005C7E6C = {
 			isa = PBXGroup;
 			children = (
-				0B06302918698F71005C7E6C /* include */,
-				0B06302C18698F71005C7E6C /* libabcNormalA.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		0B06302918698F71005C7E6C /* include */ = {
-			isa = PBXGroup;
-			children = (
-				0B06302A18698F71005C7E6C /* abcNormalA */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		0B06302A18698F71005C7E6C /* abcNormalA */ = {
-			isa = PBXGroup;
-			children = (
-				0B06302B18698F71005C7E6C /* abcNormalA.h */,
-			);
-			path = abcNormalA;
-			sourceTree = "<group>";
-		};
-		0BBD4FC9186947FC006A1007 = {
-			isa = PBXGroup;
-			children = (
-				0BBD4FD6186947FC006A1007 /* abcUniTemplate */,
-				0BBD4FD5186947FC006A1007 /* Products */,
-				0B06302818698F71005C7E6C /* lib */,
+				0B06305B18699373005C7E6C /* frameB */,
+				0B06305A18699373005C7E6C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0BBD4FD5186947FC006A1007 /* Products */ = {
+		0B06305A18699373005C7E6C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0BBD4FD4186947FC006A1007 /* abcUniTemplate.framework */,
+				0B06305918699373005C7E6C /* frameB.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0BBD4FD6186947FC006A1007 /* abcUniTemplate */ = {
+		0B06305B18699373005C7E6C /* frameB */ = {
 			isa = PBXGroup;
 			children = (
-				0BBD4FDD186947FC006A1007 /* abcUniTemplate.h */,
-				0BBD4FDE186947FC006A1007 /* abcUniTemplate.m */,
-				0BBD4FD7186947FC006A1007 /* Supporting Files */,
+				0B06306218699373005C7E6C /* frameB.h */,
+				0B06306318699373005C7E6C /* frameB.m */,
+				0B06305C18699373005C7E6C /* Supporting Files */,
 			);
-			path = abcUniTemplate;
+			path = frameB;
 			sourceTree = "<group>";
 		};
-		0BBD4FD7186947FC006A1007 /* Supporting Files */ = {
+		0B06305C18699373005C7E6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0BBD4FD8186947FC006A1007 /* abcUniTemplate-Info.plist */,
-				0BBD4FD9186947FC006A1007 /* InfoPlist.strings */,
-				0BBD4FDC186947FC006A1007 /* abcUniTemplate-Prefix.pch */,
+				0B06305D18699373005C7E6C /* frameB-Info.plist */,
+				0B06305E18699373005C7E6C /* InfoPlist.strings */,
+				0B06306118699373005C7E6C /* frameB-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -102,76 +71,75 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0BBD4FD0186947FC006A1007 /* Headers */ = {
+		0B06305518699373005C7E6C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B06302D18698F71005C7E6C /* abcNormalA.h in Headers */,
-				0BBD4FE518694924006A1007 /* abcUniTemplate.h in Headers */,
+				0B06306A18699428005C7E6C /* frameB.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0BBD4FD3186947FC006A1007 /* abcUniTemplate */ = {
+		0B06305818699373005C7E6C /* frameB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0BBD4FE2186947FC006A1007 /* Build configuration list for PBXNativeTarget "abcUniTemplate" */;
+			buildConfigurationList = 0B06306718699373005C7E6C /* Build configuration list for PBXNativeTarget "frameB" */;
 			buildPhases = (
-				0BBD4FCE186947FC006A1007 /* Sources */,
-				0BBD4FCF186947FC006A1007 /* Frameworks */,
-				0BBD4FD0186947FC006A1007 /* Headers */,
-				0BBD4FD1186947FC006A1007 /* Resources */,
-				0BBD4FD2186947FC006A1007 /* ShellScript */,
+				0B06305318699373005C7E6C /* Sources */,
+				0B06305418699373005C7E6C /* Frameworks */,
+				0B06305518699373005C7E6C /* Headers */,
+				0B06305618699373005C7E6C /* Resources */,
+				0B06305718699373005C7E6C /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = abcUniTemplate;
-			productName = abcUniTemplate;
-			productReference = 0BBD4FD4186947FC006A1007 /* abcUniTemplate.framework */;
+			name = frameB;
+			productName = frameB;
+			productReference = 0B06305918699373005C7E6C /* frameB.framework */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0BBD4FCA186947FC006A1007 /* Project object */ = {
+		0B06304F18699373005C7E6C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = erikge;
 			};
-			buildConfigurationList = 0BBD4FCD186947FC006A1007 /* Build configuration list for PBXProject "abcUniTemplate" */;
+			buildConfigurationList = 0B06305218699373005C7E6C /* Build configuration list for PBXProject "frameB" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0BBD4FC9186947FC006A1007;
-			productRefGroup = 0BBD4FD5186947FC006A1007 /* Products */;
+			mainGroup = 0B06304E18699373005C7E6C;
+			productRefGroup = 0B06305A18699373005C7E6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0BBD4FD3186947FC006A1007 /* abcUniTemplate */,
+				0B06305818699373005C7E6C /* frameB */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0BBD4FD1186947FC006A1007 /* Resources */ = {
+		0B06305618699373005C7E6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BBD4FDB186947FC006A1007 /* InfoPlist.strings in Resources */,
+				0B06306018699373005C7E6C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BBD4FD2186947FC006A1007 /* ShellScript */ = {
+		0B06305718699373005C7E6C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,21 +155,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0BBD4FCE186947FC006A1007 /* Sources */ = {
+		0B06305318699373005C7E6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BBD4FDF186947FC006A1007 /* abcUniTemplate.m in Sources */,
+				0B06306418699373005C7E6C /* frameB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0BBD4FD9186947FC006A1007 /* InfoPlist.strings */ = {
+		0B06305E18699373005C7E6C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0BBD4FDA186947FC006A1007 /* en */,
+				0B06305F18699373005C7E6C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -209,13 +177,13 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0BBD4FE0186947FC006A1007 /* Debug */ = {
+		0B06306518699373005C7E6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
-				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -247,13 +215,13 @@
 			};
 			name = Debug;
 		};
-		0BBD4FE1186947FC006A1007 /* Release */ = {
+		0B06306618699373005C7E6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
-				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -279,7 +247,7 @@
 			};
 			name = Release;
 		};
-		0BBD4FE3186947FC006A1007 /* Debug */ = {
+		0B06306818699373005C7E6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
@@ -292,14 +260,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "abcUniTemplate/abcUniTemplate-Prefix.pch";
-				INFOPLIST_FILE = "abcUniTemplate/abcUniTemplate-Info.plist";
+				GCC_PREFIX_HEADER = "frameB/frameB-Prefix.pch";
+				INFOPLIST_FILE = "frameB/frameB-Info.plist";
 				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/VCTL01/proj/self/iOS_trick/staticlib_workspace/abcUniTemplate/lib,
-				);
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,7 +273,7 @@
 			};
 			name = Debug;
 		};
-		0BBD4FE4186947FC006A1007 /* Release */ = {
+		0B06306918699373005C7E6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
@@ -322,14 +286,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "abcUniTemplate/abcUniTemplate-Prefix.pch";
-				INFOPLIST_FILE = "abcUniTemplate/abcUniTemplate-Info.plist";
+				GCC_PREFIX_HEADER = "frameB/frameB-Prefix.pch";
+				INFOPLIST_FILE = "frameB/frameB-Info.plist";
 				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/VCTL01/proj/self/iOS_trick/staticlib_workspace/abcUniTemplate/lib,
-				);
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -342,25 +302,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0BBD4FCD186947FC006A1007 /* Build configuration list for PBXProject "abcUniTemplate" */ = {
+		0B06305218699373005C7E6C /* Build configuration list for PBXProject "frameB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BBD4FE0186947FC006A1007 /* Debug */,
-				0BBD4FE1186947FC006A1007 /* Release */,
+				0B06306518699373005C7E6C /* Debug */,
+				0B06306618699373005C7E6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BBD4FE2186947FC006A1007 /* Build configuration list for PBXNativeTarget "abcUniTemplate" */ = {
+		0B06306718699373005C7E6C /* Build configuration list for PBXNativeTarget "frameB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BBD4FE3186947FC006A1007 /* Debug */,
-				0BBD4FE4186947FC006A1007 /* Release */,
+				0B06306818699373005C7E6C /* Debug */,
+				0B06306918699373005C7E6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0BBD4FCA186947FC006A1007 /* Project object */;
+	rootObject = 0B06304F18699373005C7E6C /* Project object */;
 }

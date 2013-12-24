@@ -25,7 +25,8 @@
 extern "C" {
 #endif
     
-void template_say_hello();
+    void template_say_hello();
+    int template_add(int a, int b);
 
 #ifdef __cplusplus
 }
