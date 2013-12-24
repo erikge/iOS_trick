@@ -7,13 +7,11 @@
 //
 
 #import "abcUniManual.h"
-//#import <iostream>
 
 @implementation abcUniManual
 
 @end
 
 void manual_say_hello() {
-    NSLog(@"hello");
-    //std::cout << "say: Hello World" << std::endl;
+    NSLog(@"manual say hello");
 }

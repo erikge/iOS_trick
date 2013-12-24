@@ -15,8 +15,14 @@
 /**
  * 使用苹果标准Cocoa Touch Static Library工程，
  * 然后通过shell脚本合并真机、模拟器库，创建Framework目录结构
- 
- * 本工程同时示范引用stl库
  */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 void manual_say_hello();
+
+#ifdef __cplusplus
+}
+#endif

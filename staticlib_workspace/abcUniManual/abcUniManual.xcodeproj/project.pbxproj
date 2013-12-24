@@ -23,6 +23,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0B06301818695406005C7E6C /* cppInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B06301618695406005C7E6C /* cppInterface.cpp */; };
+		0B06301918695406005C7E6C /* cppInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B06301618695406005C7E6C /* cppInterface.cpp */; };
+		0B06301B18695406005C7E6C /* cppInterface.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0B06301718695406005C7E6C /* cppInterface.h */; };
+		0B0630241869883F005C7E6C /* muxInterface.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0B0630221869883F005C7E6C /* muxInterface.h */; };
+		0B0630251869883F005C7E6C /* muxInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B0630231869883F005C7E6C /* muxInterface.mm */; };
+		0B0630261869883F005C7E6C /* muxInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B0630231869883F005C7E6C /* muxInterface.mm */; };
 		6B80894F186895E20010FDC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B80894E186895E20010FDC7 /* Foundation.framework */; };
 		6B808954186895E20010FDC7 /* abcUniManual.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B808953186895E20010FDC7 /* abcUniManual.h */; };
 		6B808956186895E20010FDC7 /* abcUniManual.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B808955186895E20010FDC7 /* abcUniManual.m */; };
@@ -63,12 +69,18 @@
 			dstSubfolderSpec = 0;
 			files = (
 				6B80897C186899D10010FDC7 /* abcUniManual.h in CopyFiles */,
+				0B0630241869883F005C7E6C /* muxInterface.h in CopyFiles */,
+				0B06301B18695406005C7E6C /* cppInterface.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B06301618695406005C7E6C /* cppInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cppInterface.cpp; sourceTree = "<group>"; };
+		0B06301718695406005C7E6C /* cppInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cppInterface.h; sourceTree = "<group>"; };
+		0B0630221869883F005C7E6C /* muxInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = muxInterface.h; sourceTree = "<group>"; };
+		0B0630231869883F005C7E6C /* muxInterface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = muxInterface.mm; sourceTree = "<group>"; };
 		6B80894B186895E20010FDC7 /* libabcUniManual.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libabcUniManual.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B80894E186895E20010FDC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B808952186895E20010FDC7 /* abcUniManual-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "abcUniManual-Prefix.pch"; sourceTree = "<group>"; };
@@ -139,6 +151,10 @@
 			children = (
 				6B808953186895E20010FDC7 /* abcUniManual.h */,
 				6B808955186895E20010FDC7 /* abcUniManual.m */,
+				0B06301718695406005C7E6C /* cppInterface.h */,
+				0B06301618695406005C7E6C /* cppInterface.cpp */,
+				0B0630221869883F005C7E6C /* muxInterface.h */,
+				0B0630231869883F005C7E6C /* muxInterface.mm */,
 				6B808951186895E20010FDC7 /* Supporting Files */,
 			);
 			path = abcUniManual;
@@ -282,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B808956186895E20010FDC7 /* abcUniManual.m in Sources */,
+				0B06301818695406005C7E6C /* cppInterface.cpp in Sources */,
+				0B0630251869883F005C7E6C /* muxInterface.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B80896B186895E20010FDC7 /* abcUniManualTests.m in Sources */,
+				0B06301918695406005C7E6C /* cppInterface.cpp in Sources */,
+				0B0630261869883F005C7E6C /* muxInterface.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

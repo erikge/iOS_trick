@@ -9,7 +9,10 @@
 #import "ViewController.h"
 #import <abcBundle/abcBundle.h>
 #import <manual/abcUniManual.h>
+#import <manual/cppInterface.h>
+#import <manual/muxInterface.h>
 #import <abcUniTemplate/abcUniTemplate.h>
+
 
 @interface ViewController ()
 
@@ -23,11 +26,15 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // test bundle
-    NSLog(@"bundle add: 3 + 2 = %d", bundle_add(3, 2));
+    //NSLog(@"bundle add: 3 + 2 = %d", bundle_add(3, 2));
     
     // test manual
-    NSLog(@"manual say: --");
-    manual_say_hello();
+    NSLog(@"manual say: ---");
+    manual_say_hello(); // oc
+    manual_say_hello_by_c(); // pure c
+    manual_say_mux_oc(); // mux
+    manual_say_mux_c(); // mux
+    NSLog(@"manual say: ---");
     
     // test template
     template_say_hello();

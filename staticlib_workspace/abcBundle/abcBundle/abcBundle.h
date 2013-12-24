@@ -30,6 +30,15 @@
     --其实是不行的，user工程（main）和库工程在一个工作空间时，貌似会自动编译对应device或simulator的库，而且貌似优先从工作空间中去链接
  */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int bundle_add(int x, int y);
+    
+#ifdef __cplusplus
+}
+#endif
+
 
 #endif

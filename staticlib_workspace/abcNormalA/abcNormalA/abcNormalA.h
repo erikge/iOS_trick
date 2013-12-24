@@ -15,6 +15,17 @@
 /**
  * *.a和头文件形式
  * 苹果标准lib库模板
+ 
+ * note: c的头文件注意extern C声明
  */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 int normal_add(int a, int b);
+
+#ifdef __cplusplus
+}
+#endif

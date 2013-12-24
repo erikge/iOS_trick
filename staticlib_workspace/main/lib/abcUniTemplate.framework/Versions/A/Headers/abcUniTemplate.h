@@ -21,4 +21,12 @@
     4. 选择target > iOS device，通过Product->Archive打包release版本的通用Framework
  */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+    
 void template_say_hello();
+
+#ifdef __cplusplus
+}
+#endif
