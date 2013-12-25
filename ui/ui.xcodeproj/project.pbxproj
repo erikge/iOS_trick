@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B063082186AEB65005C7E6C /* 3g_detect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B063081186AEB65005C7E6C /* 3g_detect.m */; };
+		0B063083186AEB65005C7E6C /* 3g_detect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B063081186AEB65005C7E6C /* 3g_detect.m */; };
 		0B59183E18604DA600DE9B56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B59183D18604DA600DE9B56 /* Foundation.framework */; };
 		0B59184018604DA600DE9B56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B59183F18604DA600DE9B56 /* CoreGraphics.framework */; };
 		0B59184218604DA600DE9B56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B59184118604DA600DE9B56 /* UIKit.framework */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B063080186AEB65005C7E6C /* 3g_detect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3g_detect.h; sourceTree = "<group>"; };
+		0B063081186AEB65005C7E6C /* 3g_detect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 3g_detect.m; sourceTree = "<group>"; };
 		0B59183A18604DA600DE9B56 /* ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B59183D18604DA600DE9B56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0B59183F18604DA600DE9B56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B06307F186AEB65005C7E6C /* skill */ = {
+			isa = PBXGroup;
+			children = (
+				0B063080186AEB65005C7E6C /* 3g_detect.h */,
+				0B063081186AEB65005C7E6C /* 3g_detect.m */,
+			);
+			path = skill;
+			sourceTree = "<group>";
+		};
 		0B59183118604DA600DE9B56 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 		0B59184318604DA600DE9B56 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				0B06307F186AEB65005C7E6C /* skill */,
 				0B59184C18604DA600DE9B56 /* AppDelegate.h */,
 				0B59184D18604DA600DE9B56 /* AppDelegate.m */,
 				0B59184F18604DA600DE9B56 /* Main_iPhone.storyboard */,
@@ -253,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B063082186AEB65005C7E6C /* 3g_detect.m in Sources */,
 				0B59185718604DA600DE9B56 /* ViewController.m in Sources */,
 				0B59184E18604DA600DE9B56 /* AppDelegate.m in Sources */,
 				0B59184A18604DA600DE9B56 /* main.m in Sources */,
@@ -263,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B063083186AEB65005C7E6C /* 3g_detect.m in Sources */,
 				0B59186C18604DA700DE9B56 /* uiTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +490,7 @@
 				0B59187118604DA700DE9B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B59187218604DA700DE9B56 /* Build configuration list for PBXNativeTarget "uiTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +499,7 @@
 				0B59187418604DA700DE9B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
