@@ -1,0 +1,28 @@
+Import("BJ")
+
+env = BJ.NewEnv()
+
+print "SConscript Compiling with", env.subst('$CC')
+
+projects = []
+
+projects += [
+        '#/../webrtc_build',
+        '#../codecs/opus',
+        '#../codecs/libamr-nb',
+        '#../codecs/gsm',
+    	'#/../codecs/libg729a',
+    	'#/../codecs/external_codecs',
+        '#/../MediaEngine',
+    	'#/../srtp',
+	]
+
+
+dirs = [ x for x in projects if x != False]
+print "SipEngineSDK SConscript dirs = ",dirs
+
+SConscript(dirs = dirs)
+
+out_lib  =  BJ.LibraryMerge(env, 'MediaEngineSDK_static')
+
+env.Install(BJ.installpath, out_lib)

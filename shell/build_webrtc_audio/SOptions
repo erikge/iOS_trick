@@ -1,0 +1,15 @@
+#Options file for GlobalSCons
+#Set your own global options here
+
+args = {
+	#if 1 then GlobalPhoneBuildId is not generated
+	'enable_crypt' : 1,
+}
+
+SIP_VERSION = '0.9.2'
+
+
+GlobalAddConsoleArguments(args)
+GlobalShowWindowsConsole(True)
+
+Export(['SIP_VERSION'])

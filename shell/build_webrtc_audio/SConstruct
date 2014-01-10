@@ -1,0 +1,24 @@
+from Env import BuildJob
+import sys
+import os
+
+opts = Options('version.py')
+opts.AddOptions(
+	BoolVariable('libcrypt', "Enable RC4 Encrypt support", True),
+	BoolVariable('debug', "Enable debug build", True),
+	BoolVariable('x64', "Enable x64 arch build", False),
+	BoolVariable('iosarmv7', "Enable armv7 arch build", True),
+	('target_os', "Target platform", sys.platform),
+	('target_arch', "Target arch", "armv7"),
+	('SIP_VERSION', "Software version", "4.3.2"),
+	)
+
+BJ = BuildJob.BuildJobInfo(opts)
+Export("BJ")
+
+
+env = BJ.NewEnv()
+
+print "Sip_Engine Building in ", BJ.buildpath
+
+env.SConscript('SConscript', variant_dir = BJ.buildpath,  duplicate = 0)

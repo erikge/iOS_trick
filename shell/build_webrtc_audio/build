@@ -1,0 +1,10 @@
+#!/bin/bash
+
+scons target_os=iphone target_arch=armv7s debug=0
+scons target_os=iphone target_arch=armv7 debug=0
+
+DIST_DIR=build_iOS_vctl_Release/dist
+
+rm -Rf $DIST_DIR
+mkdir -p $DIST_DIR
+lipo -create build_iOS_vctl_Release/build/armv7/libMediaEngineSDK_static.a build_iOS_vctl_Release/build/armv7s/libMediaEngineSDK_static.a -output $DIST_DIR/libMediaEngineSDK_static.a
