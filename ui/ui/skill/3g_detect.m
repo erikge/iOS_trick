@@ -8,6 +8,7 @@
 
 #import "3g_detect.h"
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CoreTelephony/CTCarrier.h>
 
 @implementation net_detect
 
@@ -28,8 +29,8 @@
         case INNER_TYPE_3G:
             break;
     }
-    CTCarrier *cInfo = [[[CTTelephonyNetworkInfo alloc] init] subscriberCellularProvider];
-    NSString *strInfo = [cInfo description];
+    CTCarrier *cInfoEx = [[[CTTelephonyNetworkInfo alloc] init] subscriberCellularProvider];
+    NSString *strInfo = [cInfoEx description];
     NSLog(@"erik net:%@", strInfo);
     // unicom ----------------------------------------
     NSRange found = [strInfo rangeOfString:@"中国联通"];
