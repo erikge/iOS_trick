@@ -15,6 +15,10 @@
         'sources': [
             './main.cpp'
         ],
+        'dependencies': [
+            '<(DEPTH)/shared_lib/shared.gyp:*',
+            '../static_lib/static.gyp:*',
+        ],
 
       },
     ],
