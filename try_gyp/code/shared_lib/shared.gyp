@@ -23,6 +23,16 @@
                 'include',
             ],
         },
+        'conditions': [
+            ['OS=="android"', { # android platform
+                'link_settings': {
+                    'ldflags': [
+                        '-llog',
+                    ]
+                },
+            }],
+        ]
+
 
       },
     ],

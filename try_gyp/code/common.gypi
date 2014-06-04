@@ -5,24 +5,38 @@
     'target_defaults': {
         'conditions': [
             ['OS=="iOS"', { # iOS platform
+                'defines': ['__PLATFORM_IOS', '__iOS'],
                 'xcode_settings': {
+                    #'GCC_VERSION': 'com.apple.compilers.llvm.clang.1_0',
+                    #'GCC_VERSION': 'com.apple.compilers.llvmgcc42',
                     'SDKROOT': 'iphoneos',
-                    'TARGETED_DEVICE_FAMILY': '1,2',
-                    'CODE_SIGN_IDENTITY': 'iPhone Developer',
-                    'IPHONEOS_DEPLOYMENT_TARGET': '5.0',
                     'ARCHS': '$(ARCHS_STANDARD_32_64_BIT)',
+                    # For iPhone, use 1
+                    # For iPad, use 2
+                    # For both, use 1,2. Default is 1, iphone
+                    'TARGETED_DEVICE_FAMILY': '1,2',
+                    'IPHONEOS_DEPLOYMENT_TARGET': '5.0',
+                    'CODE_SIGN_IDENTITY': 'iPhone Developer',
+                    
+                    #'CLANG_CXX_LANGUAGE_STANDARD': 'gnu++0x',
+                    #'CLANG_CXX_LIBRARY': 'libc++',
+                    #'GCC_C_LANGUAGE_STANDARD': 'gnu99',
+                    #'ONLY_ACTIVE_ARCH': 'YES',
                 },
             }],
             ['OS=="android"', { # android platform
-                # TODO
+                'defines': ['__PLATFORM_ANDROID', '__android'],
             }],
             ['OS=="linux"', {
-                'defines': ['__unix__', '_LINUX'],
+                'defines': ['__PLATFORM_LINUX', '__linux'],
                 'cflags': ['-Wall']
             }],
             ['OS=="win"', {
-                'defines': ['WIN32'],
-                'msvs_configuration_attributes': {'CharacterSet': '1'},
+                'defines': ['__PLATFORM_WIN', '__win', 'WIN32'],
+                'msvs_configuration_attributes': {
+                    # 1 for unicode, 2 for multi-byte.
+                    'CharacterSet': '1',
+                    },
                 'msvs_settings': {
                     'VCCLCompilerTool': {
                         'WarningLevel': '4',
@@ -31,11 +45,12 @@
                 }
             }],
             ['OS=="mac"', {
-                'defines': ['__unix__', '_MACOS'],
+                'defines': ['__PLATFORM_MAC', '__mac'],
                 'cflags': ['-Wall']
             }]
         ], # end conditions OS
 
+        'default_configuration': 'Debug',
         'configurations': {
             'Debug': {
                 'defines': ['_DEBUG'],
