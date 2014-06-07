@@ -15,7 +15,7 @@
                     # For iPad, use 2
                     # For both, use 1,2. Default is 1, iphone
                     'TARGETED_DEVICE_FAMILY': '1,2',
-                    'IPHONEOS_DEPLOYMENT_TARGET': '5.0',
+                    'IPHONEOS_DEPLOYMENT_TARGET': '7.0',
                     'CODE_SIGN_IDENTITY': 'iPhone Developer',
                     
                     #'CLANG_CXX_LANGUAGE_STANDARD': 'gnu++0x',
@@ -25,7 +25,14 @@
                 },
             }],
             ['OS=="android"', { # android platform
-                'defines': ['__PLATFORM_ANDROID', '__android'],
+                'defines': ['__PLATFORM_ANDROID', '__android',
+                    # not sure the usage
+                    #'os_posix=1',
+                    #'target_arch=arm',
+                    #'clang=0',
+                    #'component=static_library',
+                    #'use_system_stlport=0',
+                ],
             }],
             ['OS=="linux"', {
                 'defines': ['__PLATFORM_LINUX', '__linux'],
